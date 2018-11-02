@@ -5,9 +5,9 @@ $type = (isset($_POST['type']))? $_POST['type'] : null;
 if($type=='create') {
 	$id = $_POST['id'];
 	//DB接続
-	$dsn = 'mysql:dbname=tt_363_99sv_coco_com;host=localhost';
-	$user = 'tt-363.99sv-coco';
-	$password = 'N8x9gPAR';
+	$dsn = 'データベース名';
+	$user = 'ユーザー名';
+	$password = 'パスワード';
 	$pdo = new PDO($dsn,$user,$password);
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
